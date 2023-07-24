@@ -5,5 +5,84 @@
 }
 
 body{
-    background-image: url();
+    background-image: url("../Assets/rgb.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 39px;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: rgba(10, 20, 29, 0.327);
+    opacity: 0.9;
+    border: none;
+    border-radius: 50px;
+    margin-top: 4px;
+}
+
+nav{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ecf0f1;
+}
+
+.logo{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.navList{
+    list-style: none;
+}
+
+.navList li{
+    display: inline-block;
+    padding: 0px 20px;
+
+}
+
+
+.navList li a{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color:#ecf0f1
+
+
+}
+
+.navList li a:hover{
+    color: #0088a9;
+    animation: navLink 0.22s ease forwards;
+}
+
+.navButton{
+    padding: 9px 25px;
+    background-color: rgba(240, 248, 255, 0);
+    border: 1px solid #ecf0f1;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #ecf0f1;
+    transition: all 0.3s ease 0s;
+}
+
+.navButton:hover{
+    background-color: rgba(240, 248, 255, 0.8);
+    color: #101517;
+}
+
+@keyframes navLink {
+    100%{
+        font-size: larger;
+    }
 }
