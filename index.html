@@ -17,6 +17,7 @@
 <body>
     <header class="header">
         <img class="logo" src="https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-yelan/sticker_3.png?0ce57fae68b112adede1f29dca8a72d9&d=200x200" alt="logo">
+        <button class="navButton audioplay" id="musicbtn" data-music-btn>music: on</button>
         <nav class="navBar">
             <ul class="navList">
                 <li class="navItem"><a href="https://github.com/Aaradhy-Sharma" class="navLink">GitHub</a></li>   |
@@ -31,14 +32,49 @@
                 Sign up!
             </button>
         </div>
-
+<audio id="music" data-music loop autoplay volume="50%">
+    <source src="Assets/theme.mp3" type="audio/mpeg">
+</audio>
         <main>
                 <div class="form-box invis" id="form-box" data-form-box>
-
+                    <form class="form" action="">
+                            <div class="first-name-input">
+                                <label for="first-name">First Name</label>
+                                <input type="text" name="first-name" id="first-name" placeholder="First Name" required>
+                            </div>
+                            <div class="last-name-input">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" name="last-name" id="last-name" placeholder="Last Name" required>
+                            </div>
+                            <div class="email-input">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="Email" required>
+                            </div>
+                            <div class="phone-number-input">
+                                <label for="phone-number">Phone Number</label>
+                                <input type="tel" name="phone-number" id="phone-number" placeholder="Phone Number" required min="10" max="10">
+                                <div class="error-message" id="phoneNumberError"></div>
+                            </div>
+                            <div class="password-input">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password" placeholder="Password" required data-password>
+                            </div>
+                            <div class="confirm-password-input">
+                                <label for="confirm-password">Confirm Password</label>
+                                <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password" required data-confirm-password>
+                                <div class="error-message" id="confirmPasswordError"></div>
+                            </div>
+                            <div class="submit">
+                                <button type="submit" class="signup" id="signupsecond" data-submit>
+                                    Sign up!
+                                </button>
+                            </div>
+                    </form>
                 </div>
         </main>
     </div>
-    <footer></footer>
+    <footer>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 </html>
